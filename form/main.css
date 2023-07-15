@@ -9,9 +9,9 @@ body{
 }
 header{
     width: 1510px;
-    height: 800px;
+    height: 55  0px;
     margin: 0 auto;
-    border:  1px solid red;
+    /* border:  1px solid red; */
     display: flex;
     flex-direction: column;
     /* justify-content: space-around; */
@@ -72,7 +72,7 @@ nav{
     border-radius: 8px;
 }
 .dropdown-one .dropbtn {
-    background-color: #fff;
+    background-color: #f9f9f9;
     color: #64748B;
     border: 2px solid #E2E8F0;
     display: flex;
@@ -84,7 +84,7 @@ nav{
     cursor: pointer;
 }
 .dropdown-two .dropbtn {
-    background-color: #fff;
+    background-color: #f9f9f9;
     color: #64748B;
     border: 2px solid #E2E8F0;
     display: flex;
@@ -273,4 +273,276 @@ nav{
     color: #64748B;
     font-size: 14px;
     outline: none;
+}
+main{
+    width: 1500px;
+    height: 4000px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0 auto;
+}
+.years{
+    display: flex;
+    height: 80px;
+    /* border: 1px solid red; */
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+}
+.years h1{
+    font-size: 18px;
+    font-weight: 500;
+    color: #64748B;
+    padding: 15px 80px;
+    cursor: pointer;
+    border-bottom: 2px solid #f9f9f9;
+}
+.years h1:hover{
+    border-bottom: 2px solid #3562F4;
+    color: #3562F4;
+}
+
+.tarmoq{
+    display: flex;
+    width: 90%;
+    height: 140px;
+    align-items: center;
+    gap: 75px;
+    margin: 0 auto;
+}
+.tarmoq input{
+    border-radius: 8px;
+    border: 1px solid #E2E8F0;
+    background: #FFF;
+    width: 264px;
+    padding: 15px 10px 15px 16px;
+    color: #64748B;
+    font-size: 14px;
+    outline: none;
+}
+.tarmoq input:nth-child(2){
+    width: 522px;
+}
+.danger{
+    width: 95%;
+    height: 240px;
+    background: #FFF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    /* justify-content: center; */
+}
+.section-title{
+    color:#64748B;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+.list-one{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    column-gap: 240px;
+    row-gap: 35px;
+}
+.list-one input{
+    border-radius: 8px;
+    border: 1px solid #E2E8F0;
+    background: #FFF;
+    width: 529px;
+    padding: 15px 10px 15px 16px;
+    color: #64748B;
+    font-size: 14px;
+    outline: none;
+}
+.railway-length{
+    width: 95%;
+    height: 240px;
+    background: #FFF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.list-two{
+    display: flex;
+    gap: 75px;
+    margin-top: 35px;
+    margin-left: 30px;
+}
+.list-two input{
+    border-radius: 8px;
+    border: 1px solid #E2E8F0;
+    background: #FFF;
+    width: 252px;
+    padding: 15px 10px 15px 16px;
+    color: #64748B;
+    font-size: 14px;
+    outline: none;
+}
+.all-length{
+    width: 95%;
+    height: 160px;
+    background: #FFF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.list-three input{
+    border-radius: 8px;
+    border: 1px solid #E2E8F0;
+    background: #FFF;
+    width: 252px;
+    padding: 15px 10px 15px 16px;
+    color: #64748B;
+    font-size: 14px;
+    outline: none;
+}
+.list-three{
+    display: flex;
+    gap: 75px;
+    margin-top: 35px;
+    margin-left: 30px;
+}
+.list-three input:nth-child(3){
+    width: 530px;
+}
+.list-four{
+    display: flex;
+    column-gap: 75px;
+    row-gap: 25px;
+    margin-top: 35px;
+    margin-left: 30px;
+    flex-wrap: wrap;
+}
+.list-four input{
+    border-radius: 8px;
+    border: 1px solid #E2E8F0;
+    background: #FFF;
+    width: 375px;
+    padding: 15px 10px 15px 16px;
+    color: #64748B;
+    font-size: 14px;
+    outline: none;
+}
+.lokomativ{
+    width: 95%;
+    height: 320px;
+    background: #FFF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.list-five{
+    display: flex;
+    column-gap: 75px;
+    row-gap: 25px;
+    margin-top: 35px;
+    margin-left: 30px;
+    flex-wrap: wrap;
+}
+.list-five input{
+    border-radius: 8px;
+    border: 1px solid #E2E8F0;
+    background: #FFF;
+    width: 300px;
+    padding: 15px 10px 15px 16px;
+    color: #64748B;
+    font-size: 14px;
+    outline: none;
+}
+.list-five input:nth-child(1){
+    width: 528px;
+}
+.ijara-vagon{
+    width: 95%;
+    height: 470px;
+    background: #FFF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.list-six{
+    display: flex;
+    column-gap: 75px;
+    row-gap: 25px;
+    margin-top: 35px;
+    margin-left: 30px;
+    flex-wrap: wrap;
+}
+.list-six input{
+    border-radius: 8px;
+    border: 1px solid #E2E8F0;
+    background: #FFF;
+    width: 160px;
+    padding: 15px 10px 15px 16px;
+    color: #64748B;
+    font-size: 14px;
+    outline: none;
+}
+.list-seven{
+    display: flex;
+    column-gap: 75px;
+    row-gap: 25px;
+    margin-top: 35px;
+    margin-left: 30px;
+    flex-wrap: wrap;
+}
+.list-seven input{
+    border-radius: 8px;
+    border: 1px solid #E2E8F0;
+    background: #FFF;
+    width: 375px;
+    padding: 15px 10px 15px 16px;
+    color: #64748B;
+    font-size: 14px;
+    outline: none;
+}
+.list-seven input:nth-child(7){
+    width: 1332px;
+}
+.xodimlar{
+    width: 95%;
+    height: 400px;
+    background: #FFF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.list-eight{
+    display: flex;
+    column-gap: 75px;
+    row-gap: 25px;
+    margin-top: 35px;
+    margin-left: 30px;
+    flex-wrap: wrap;
+}
+.list-eight input{
+    border-radius: 8px;
+    border: 1px solid #E2E8F0;
+    background: #FFF;
+    width: 615px;
+    padding: 15px 10px 15px 16px;
+    color: #64748B;
+    font-size: 14px;
+    outline: none;
+}
+.ftr{
+    width: 95%;
+    height: 400px;
+    /* background: #FFF; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 }
