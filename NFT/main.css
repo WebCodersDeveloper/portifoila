@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Syne', sans-serif;     */
+}
+body{
+    background: #f9f8ff;;
+}
+header{
+    width: 1515px;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    align-items: center;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid red; */
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #F8E0FB;
+    margin: 0 auto;
+    background: #fff;
+}
+nav ul{
+    display: flex;
+    gap: 45px;
+    list-style: none;
+}
+nav ul a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    opacity: 0.5;
+    width: 90px;
+    height: 35px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    position: relative;
+    transition: .5s;
+}
+nav ul a::before{
+    content: '';
+    width: 95px;
+    height: 3px;
+    background: #e797e6;
+    position: absolute;
+    left: 100px;
+    top: 3px;
+    transition: .5s;
+}
+nav ul a::after{
+    content: '';
+    width: 95px;
+    height: 2.5px;
+    background: #e797e6;
+    position: absolute;
+    left: -100px;
+    top: 32px;
+    transition: .5s;
+}
+nav ul a:hover::after{
+    left: -55px;
+}
+nav ul a:hover::before{
+    left: 45px;
+}
+nav ul a:hover{
+    background: linear-gradient(to right,red, #e797e6, #6104d0); /* Replace with your desired gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .5s;
+}
+nav ul a:hover svg{
+    filter: invert(18%) sepia(71%) saturate(4512%) hue-rotate(263deg) brightness(82%) contrast(113%);
+}
+nav img{
+    width: 151px;
+    height: 40px;
+}
+.banner{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    /* border: 1px  solid red; */
+    background: rgb(245,208,249);
+    background: radial-gradient(circle, rgba(245,208,249,1) 14%, rgba(249,248,255,1) 42%);
+}
+.banner-main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 645px;
+    /* border: 1px solid red; */
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+    background: url(img/Background\ shape.png),url(img/Background\ shape\ \(1\).png),url(img/Background\ shape\ \(2\).png),url(img/Background\ shape4.png);
+    background-repeat: no-repeat;
+    background-size: 300px,200px,211px,200px;
+    background-position: 30px 350px,15px 15px,1265px 420px,1265px 50px;
+}
+.banner-main h1{
+    color: #000;
+    text-align: center;
+    text-shadow: -5px 5px 0px rgb(255, 255, 255);
+    font-family: Syne;
+    font-size: 80px;
+    font-weight: 700;
+    width: 725px;
+}
+.banner-main p{
+    color: #532C59;
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 740px;
+}
+.banner-main button{
+    padding: 16px 20px;
+    background-color: #532c59;
+    border: none;
+    border-radius: 20px;
+    color: #FFF;
+    font-family: Syne;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .5s ;
+}
+.banner-main button:hover{
+    box-shadow:
+    -1px -1px 20px 0px rgba(255,255,255,1),
+    -4px -4px 5px 0px rgba(255,255,255,1),
+    7px 7px 20px 0px rgba(0,0,0,.4),
+    4px 4px 5px 0px rgba(0,0,0,.3);
+    /* border: 2px solid rgba(182, 196, 206, 0.2); */
+    background: none;
+    color: whitesmoke;
+    transition: .5s;
+}
+.company-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    height: 120px;
+}
+.company-logo svg{
+    width: 150px;
+    cursor: pointer;
+}
+main{
+    width: 1515px;
+    height: 3500px;
+    margin: 0 auto;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #f9f8ff; */
+    z-index: 99;
+    /* z-index: -2; */
+}
+.card-title{
+    background: #f9f8ff;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title-main{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+.title-main h2{
+    font-family: Syne;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000;
+}
+.title-main p{
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-weight: 400;
+    color: #532C59;
+    width: 850px;
+}
+.card-main{
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 115px;
+}
+.cards{
+    width: 100%;
+    height: 1250px;
+    /* border: 1px solid red; */
+
+}
+.card-list{
+    display: flex;
+    flex-direction: column;
+    width: 415px;
+    height: 555px;
+    /* border: 1px solid red; */
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.card-list img{
+    width: 412px;
+    height: 396px;
+}
+.card-text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: ease-in-out 450ms;
+}
+.card-text h3{
+    font-family: Syne;
+    font-size: 32px;
+    font-size: 600;
+    color: #000;
+}
+.card-text p{
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-weight: 400;
+    color: #532C59;
+}
+.card-text button{
+    width: 280px;
+    height: 45px;
+    margin: auto;
+    color: whitesmoke;
+    background: #e797e6;
+    border: none;
+    border-radius: 6px;
+    font-family: Syne;
+    font-size: 16px;
+    font-weight: 700;
+    top: 155px;
+    left: 70px;
+    position: absolute;
+    box-shadow: 0px 0px 17px 5px rgba(245, 208, 249, 1);
+    cursor: pointer;
+}
+.card-text button:hover{
+    background: red;
+}
+.card-img{
+    position: relative;
+    width: 412px;
+    height: 396px;
+    cursor: pointer;
+}
+.card-list::after{
+    content: '';
+    width: 414px;
+    height: 398px;
+    background: #00000060;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    border-radius: 30px;
+    transform: scale(0, 1);
+    transition: ease-in-out 450ms;
+}
+.card-list:hover::after{
+    transform: scale(1, 1);
+
+}
+.card-list::before{
+    content: 'Buy Now';
+    font-family: Syne;
+    font-size: 20px;
+    color: #e797e6;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    top: 110px;
+    left: 135px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    box-shadow: 0px 0px 17px 5px rgba(245, 208, 249, 1);
+    transform: scale(0);
+    transition: ease-in-out 450ms;
+}
+.card-list:hover::before{
+    transform: scale(1);
+}
+
+.card-list:hover .card-text{
+    transform: translate(0px,-150px);
+}
+.team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 600px;
+}
+.team-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+    gap: 100px;
+}
+.team-title{
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+.team-title h2{
+    color: #000;
+    text-align: center;
+    font-family: Syne;
+    font-size: 48px;
+    font-weight: 700;
+}
+.team-title p{
+    color: #532C59;
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-weight: 400;
+    width: 550px;
+    width: 760px;
+}
+.team-card{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* width: 100%; */
+    gap: 175px;
+}
+.team-card li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+.team-card li img{
+    width: 80px;
+    height: 80px;
+}
+.team-card li h5{
+    font-size: 24px;
+    color: #000;
+    font-family: Space Grotesk;
+    font-weight: 700;
+}
+.team-card p{
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-weight: 300;
+    color: #532C59;
+}
